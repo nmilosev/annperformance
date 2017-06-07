@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>MNIST in CSV</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Joseph Redmon">
+                <meta name="msvalidate.01" content="305CD82AE65FC4C9597F80416C1271B7">
+		<link rel="stylesheet" media="screen" href="MNIST%20in%20CSV_files/base.css">
+		<link rel="stylesheet" media="screen" href="MNIST%20in%20CSV_files/darknet.css">
+        <link rel="stylesheet" media="screen" href="MNIST%20in%20CSV_files/index.css">
+		<link rel="stylesheet" media="screen" href="MNIST%20in%20CSV_files/papers.css">
+		<link rel="stylesheet" media="screen" href="MNIST%20in%20CSV_files/projects.css">
+		<link rel="stylesheet" media="screen" href="MNIST%20in%20CSV_files/coqindex.css">
+
+        <link href="MNIST%20in%20CSV_files/css.css" rel="stylesheet" type="text/css">
+        <link href="MNIST%20in%20CSV_files/css_003.css" rel="stylesheet" type="text/css">
+        <link href="MNIST%20in%20CSV_files/css_002.css" rel="stylesheet" type="text/css">
+		
+		<link rel="icon" type="image/png" href="https://pjreddie.com/static/icon.png">
+		
+		
+        <meta name="description" content="MNIST is a great dataset in awful packaging. Here's a CSV instead of that crazy format they are normally available in. Enjoy!">
+    
+		<script type="text/javascript" async="" src="MNIST%20in%20CSV_files/ga.js"></script><script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37236849-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+	</head>
+
+	<body>
+		<div class="top">
+			<ul class="nav">
+				<a href="https://pjreddie.com/"><li>home</li></a>
+				<a href="https://pjreddie.com/darknet/"><li class="relative"><img id="dncircle" src="MNIST%20in%20CSV_files/darknet_notext.png">darknet</li></a>
+				<a href="https://pjreddie.com/coq-tactics/"><li class="relative"><img id="dncircle" src="MNIST%20in%20CSV_files/coq.png">coq tactics</li></a>
+				<a href="https://pjreddie.com/publications/"><li>publications</li></a>
+				<a href="https://pjreddie.com/projects/"><li>projects</li></a>
+				
+				<a href="https://pjreddie.com/resume/"><li>résumé</li></a>
+			</ul>
+			<div class="break"></div>
+			
+			<div class="break"></div>
+		</div>
+		
+	<div class="main markdown">
+		<h1>MNIST in CSV</h1>
+		<p>Here's the <a href="https://pjreddie.com/media/files/mnist_train.csv">train set</a> and <a href="https://pjreddie.com/media/files/mnist_test.csv">test set</a>.</p>
+<p>The format is:</p>
+<pre><code>label, pix-11, pix-12, pix-13, ...
+</code></pre>
+<p>where <code>pix-ij</code> is the pixel in the <code>ith</code> row and <code>jth</code> column.</p>
+<p>For the curious, this is the script to generate the csv files from the <a href="http://yann.lecun.com/exdb/mnist/">original data</a>.</p>
+<pre><code>def convert(imgf, labelf, outf, n):
+    f = open(imgf, "rb")
+    o = open(outf, "w")
+    l = open(labelf, "rb")
+
+    f.read(16)
+    l.read(8)
+    images = []
+
+    for i in range(n):
+        image = [ord(l.read(1))]
+        for j in range(28*28):
+            image.append(ord(f.read(1)))
+        images.append(image)
+
+    for image in images:
+        o.write(",".join(str(pix) for pix in image)+"\n")
+    f.close()
+    o.close()
+    l.close()
+
+convert("train-images-idx3-ubyte", "train-labels-idx1-ubyte",
+        "mnist_train.csv", 60000)
+convert("t10k-images-idx3-ubyte", "t10k-labels-idx1-ubyte",
+        "mnist_test.csv", 10000)
+</code></pre>
+	</div>
+    
+        
+
+	
+
+</body></html>
