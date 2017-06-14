@@ -49,9 +49,14 @@ func main() {
             input_float[i] = f
         }
 
-        for i := range outputs {
-            f, _ := strconv.ParseFloat(outputs[i], 64)
-            output_float[i] = f 
+        output, _ := strconv.Atoi(outputs[0])
+
+        for i := range output_float {
+            if i == output {
+                output_float[i] = 1.0
+            } else {
+                output_float[i] = 0.0
+            }
         }
 
         pattern[0] = input_float;

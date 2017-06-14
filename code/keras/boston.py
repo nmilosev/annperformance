@@ -14,24 +14,24 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 inputs = []
 outputs = []
 
-num_inputs = 2
+num_inputs = 13
 num_outputs = 1
-num_hidden = 2
-num_epochs = 10000
+num_hidden = 50
+num_epochs = 1000
 
-with open('../../data/xor.csv', 'rt') as csvfile:
+with open('../../data/boston_normalized.csv', 'rt') as csvfile:
     reader = csv.reader(csvfile, delimiter=',', quotechar='"')
     for row in reader:
         input_prep = []
         output_prep = []
-        for i in range (0, 1):
+        for i in range (13, 14):
             output_prep.append(float(row[i]))
-        for i in range (1, 3):
+        for i in range (0, 13):
             input_prep.append(float(row[i]))
         inputs.append(input_prep)
         outputs.append(output_prep)
-             
-print("Time to load: {0:.20f}s".format(timer() - start)) 
+
+print("Time to load: {0:.20f}s".format(timer() - start))
 
 start = timer()
 

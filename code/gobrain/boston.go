@@ -22,7 +22,7 @@ func main() {
     num_inputs  := 13
     num_hidden  := 50
     num_outputs := 1
-    num_epochs  := 10000
+    num_epochs  := 1000
 
     r := csv.NewReader(bufio.NewReader(f))
 

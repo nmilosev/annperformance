@@ -14,19 +14,22 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 inputs = []
 outputs = []
 
-num_inputs = 2
-num_outputs = 1
-num_hidden = 2
-num_epochs = 10000
+num_inputs = 784
+num_outputs = 10
+num_hidden = 100
+num_epochs = 1
 
-with open('../../data/xor.csv', 'rt') as csvfile:
+with open('../../data/mnist_train.csv', 'rt') as csvfile:
     reader = csv.reader(csvfile, delimiter=',', quotechar='"')
     for row in reader:
         input_prep = []
         output_prep = []
-        for i in range (0, 1):
-            output_prep.append(float(row[i]))
-        for i in range (1, 3):
+        for i in range (0, 10):
+            if float(row[i]) == i:
+                output_prep.append(1.)
+            else:
+                output_prep.append(0.)
+        for i in range (1, 785):
             input_prep.append(float(row[i]))
         inputs.append(input_prep)
         outputs.append(output_prep)
