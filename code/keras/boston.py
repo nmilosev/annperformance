@@ -17,7 +17,7 @@ outputs = []
 num_inputs = 13
 num_outputs = 1
 num_hidden = 50
-num_epochs = 1000
+num_epochs = 50
 
 with open('../../data/boston_normalized.csv', 'rt') as csvfile:
     reader = csv.reader(csvfile, delimiter=',', quotechar='"')

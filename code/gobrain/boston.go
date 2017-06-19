@@ -22,7 +22,7 @@ func main() {
     num_inputs  := 13
     num_hidden  := 50
     num_outputs := 1
-    num_epochs  := 1000
+    num_epochs  := 50
 
     r := csv.NewReader(bufio.NewReader(f))
 
@@ -79,5 +79,5 @@ func main() {
     ff.Test(patterns)
     
     fmt.Println("Tested network in: ", time.Since(start))
-    start = time.Now()
+    bufio.NewReader(os.Stdin).ReadBytes('\n')
 }

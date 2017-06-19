@@ -1,3 +1,5 @@
+# Uses SKLEARN to normalize data
+
 from sklearn import datasets
 
 dataset = datasets.load_boston()

@@ -18,7 +18,8 @@ func main() {
 
     rand.Seed(0)
 
-    f, _ := os.Open("../../data/mnist_train.csv")
+    f, _ := os.Open("../../data/mnist_train_inputs.csv")
+    fout, _ := os.Open("../../data/mnist_train_outputs.csv")
 
     num_inputs  := 784
     num_hidden  := 100
@@ -26,11 +27,13 @@ func main() {
     num_epochs  := 1
 
     r := csv.NewReader(bufio.NewReader(f))
-
+    rout := csv.NewReader(bufio.NewReader(fout))
+    
     patterns := [][][]float64{}
 
     for {
         record, err := r.Read()
+        recordout, err := rout.Read()
 
         if err == io.EOF {
             break
@@ -38,8 +41,8 @@ func main() {
 
         pattern := [][] float64{{}, {}}
 
-        inputs := record[1:]
-	    outputs := record[:1]
+        inputs := record
+	    outputs := recordout
 
         input_float := make([]float64, num_inputs)
         output_float := make([]float64, num_outputs)
@@ -49,14 +52,9 @@ func main() {
             input_float[i] = f
         }
 
-        output, _ := strconv.Atoi(outputs[0])
-
-        for i := range output_float {
-            if i == output {
-                output_float[i] = 1.0
-            } else {
-                output_float[i] = 0.0
-            }
+        for i := range outputs {
+            f, _ := strconv.ParseFloat(outputs[i], 64)
+            output_float[i] = f
         }
 
         pattern[0] = input_float;
@@ -85,6 +83,6 @@ func main() {
     ff.Test(patterns)
     
     fmt.Println("Tested network in: ", time.Since(start))
-    start = time.Now()
+    bufio.NewReader(os.Stdin).ReadBytes('\n')
 
 }

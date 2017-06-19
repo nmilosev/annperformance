@@ -19,21 +19,23 @@ num_outputs = 10
 num_hidden = 100
 num_epochs = 1
 
-with open('../../data/mnist_train.csv', 'rt') as csvfile:
+with open('../../data/mnist_train_inputs.csv', 'rt') as csvfile:
     reader = csv.reader(csvfile, delimiter=',', quotechar='"')
     for row in reader:
-        input_prep = []
-        output_prep = []
+        prep = []
+        for i in range (0, 784):
+            prep.append(float(row[i]))
+        inputs.append(prep)
+
+with open('../../data/mnist_train_outputs.csv', 'rt') as csvfile:
+    reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+    for row in reader:
+        prep = []
         for i in range (0, 10):
-            if float(row[i]) == i:
-                output_prep.append(1.)
-            else:
-                output_prep.append(0.)
-        for i in range (1, 785):
-            input_prep.append(float(row[i]))
-        inputs.append(input_prep)
-        outputs.append(output_prep)
-             
+            prep.append(float(row[i]))
+        outputs.append(prep)
+
+
 print("Time to load: {0:.20f}s".format(timer() - start)) 
 
 start = timer()

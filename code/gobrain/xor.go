@@ -80,6 +80,7 @@ func main() {
     ff.Test(patterns)
     
     fmt.Println("Tested network in: ", time.Since(start))
-    start = time.Now()
+    
+    bufio.NewReader(os.Stdin).ReadBytes('\n')
     
 }
