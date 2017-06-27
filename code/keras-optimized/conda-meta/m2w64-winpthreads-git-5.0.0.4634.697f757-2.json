@@ -1,0 +1,46 @@
+{
+  "arch": "x86_64",
+  "auth": null,
+  "build": "2",
+  "build_number": 2,
+  "channel": "https://repo.continuum.io/pkgs/msys2/win-64",
+  "depends": [
+    "m2w64-crt-git",
+    "m2w64-libwinpthread-git",
+    "msys2-conda-epoch >=20160418"
+  ],
+  "files": [
+    "Library/mingw-w64/share/licenses/winpthreads/COPYING",
+    "Library/mingw-w64/share/licenses/winpthreads/mingw-w64-libraries/winpthreads/COPYING",
+    "Library/mingw-w64/x86_64-w64-mingw32/include/pthread.h",
+    "Library/mingw-w64/x86_64-w64-mingw32/include/pthread_compat.h",
+    "Library/mingw-w64/x86_64-w64-mingw32/include/pthread_signal.h",
+    "Library/mingw-w64/x86_64-w64-mingw32/include/pthread_time.h",
+    "Library/mingw-w64/x86_64-w64-mingw32/include/pthread_unistd.h",
+    "Library/mingw-w64/x86_64-w64-mingw32/include/sched.h",
+    "Library/mingw-w64/x86_64-w64-mingw32/include/semaphore.h",
+    "Library/mingw-w64/x86_64-w64-mingw32/lib/libpthread.a",
+    "Library/mingw-w64/x86_64-w64-mingw32/lib/libpthread.dll.a",
+    "Library/mingw-w64/x86_64-w64-mingw32/lib/libwinpthread.a",
+    "Library/mingw-w64/x86_64-w64-mingw32/lib/libwinpthread.dll.a"
+  ],
+  "fn": "m2w64-winpthreads-git-5.0.0.4634.697f757-2.tar.bz2",
+  "has_prefix": false,
+  "license": "MIT, BSD",
+  "link": {
+    "source": "C:\\ProgramData\\Anaconda3\\pkgs\\m2w64-winpthreads-git-5.0.0.4634.697f757-2",
+    "type": 1
+  },
+  "md5": "ce04a744a829155b007ec8cd3fdc3065",
+  "name": "m2w64-winpthreads-git",
+  "noarch": null,
+  "platform": "win32",
+  "preferred_env": null,
+  "priority": 0,
+  "schannel": "defaults",
+  "size": 46285,
+  "subdir": "win-64",
+  "url": "https://repo.continuum.io/pkgs/msys2/win-64/m2w64-winpthreads-git-5.0.0.4634.697f757-2.tar.bz2",
+  "version": "5.0.0.4634.697f757",
+  "with_features_depends": {}
+}

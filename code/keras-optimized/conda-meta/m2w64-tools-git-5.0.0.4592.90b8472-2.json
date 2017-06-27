@@ -1,0 +1,41 @@
+{
+  "arch": "x86_64",
+  "auth": null,
+  "build": "2",
+  "build_number": 2,
+  "channel": "https://repo.continuum.io/pkgs/msys2/win-64",
+  "depends": [
+    "m2w64-gcc-libs",
+    "msys2-conda-epoch >=20160418"
+  ],
+  "files": [
+    "Library/mingw-w64/bin/gendef.exe",
+    "Library/mingw-w64/bin/genidl.exe",
+    "Library/mingw-w64/bin/genlib.exe",
+    "Library/mingw-w64/bin/genpeimg.exe",
+    "Library/mingw-w64/bin/widl.exe",
+    "Library/mingw-w64/share/licenses/mingw-w64-tools/COPYING.gendef",
+    "Library/mingw-w64/share/licenses/mingw-w64-tools/COPYING.genidl",
+    "Library/mingw-w64/share/licenses/mingw-w64-tools/COPYING.genlib",
+    "Library/mingw-w64/share/licenses/mingw-w64-tools/COPYING.genpeimg"
+  ],
+  "fn": "m2w64-tools-git-5.0.0.4592.90b8472-2.tar.bz2",
+  "has_prefix": false,
+  "license": "custom",
+  "link": {
+    "source": "C:\\ProgramData\\Anaconda3\\pkgs\\m2w64-tools-git-5.0.0.4592.90b8472-2",
+    "type": 1
+  },
+  "md5": "8ada3aa694b8f70b7388e8a2cd04e4c4",
+  "name": "m2w64-tools-git",
+  "noarch": null,
+  "platform": "win32",
+  "preferred_env": null,
+  "priority": 0,
+  "schannel": "defaults",
+  "size": 321720,
+  "subdir": "win-64",
+  "url": "https://repo.continuum.io/pkgs/msys2/win-64/m2w64-tools-git-5.0.0.4592.90b8472-2.tar.bz2",
+  "version": "5.0.0.4592.90b8472",
+  "with_features_depends": {}
+}

@@ -1,0 +1,38 @@
+{
+  "arch": "x86_64",
+  "auth": null,
+  "build": "py36_3",
+  "build_number": 3,
+  "channel": "https://repo.continuum.io/pkgs/free/win-64",
+  "date": "2017-01-11",
+  "depends": [
+    "mkl >=11.0",
+    "python 3.6*"
+  ],
+  "files": [
+    "Lib/site-packages/mkl/__init__.py",
+    "Lib/site-packages/mkl/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/mkl/__pycache__/test.cpython-36.pyc",
+    "Lib/site-packages/mkl/service.cp36-win_amd64.pyd",
+    "Lib/site-packages/mkl/test.py"
+  ],
+  "fn": "mkl-service-1.1.2-py36_3.tar.bz2",
+  "license": "3-clause BSD",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\ProgramData\\Anaconda3\\pkgs\\mkl-service-1.1.2-py36_3",
+    "type": 1
+  },
+  "md5": "6a10850911a2f1ddac36ba1a5dbf2311",
+  "name": "mkl-service",
+  "noarch": null,
+  "platform": "win32",
+  "preferred_env": null,
+  "priority": 0,
+  "schannel": "defaults",
+  "size": 12078,
+  "subdir": "win-64",
+  "url": "https://repo.continuum.io/pkgs/free/win-64/mkl-service-1.1.2-py36_3.tar.bz2",
+  "version": "1.1.2",
+  "with_features_depends": {}
+}

@@ -1,0 +1,34 @@
+{
+  "arch": "x86_64",
+  "auth": null,
+  "build": "2",
+  "build_number": 2,
+  "channel": "https://repo.continuum.io/pkgs/msys2/win-64",
+  "depends": [
+    "msys2-conda-epoch >=20160418"
+  ],
+  "files": [
+    "Library/mingw-w64/bin/libwinpthread-1.dll",
+    "Library/mingw-w64/share/licenses/libwinpthread/COPYING",
+    "Library/mingw-w64/share/licenses/libwinpthread/mingw-w64-libraries/winpthreads/COPYING"
+  ],
+  "fn": "m2w64-libwinpthread-git-5.0.0.4634.697f757-2.tar.bz2",
+  "has_prefix": false,
+  "license": "MIT, BSD",
+  "link": {
+    "source": "C:\\ProgramData\\Anaconda3\\pkgs\\m2w64-libwinpthread-git-5.0.0.4634.697f757-2",
+    "type": 1
+  },
+  "md5": "67e61e700eb27424979778fae9293f13",
+  "name": "m2w64-libwinpthread-git",
+  "noarch": null,
+  "platform": "win32",
+  "preferred_env": null,
+  "priority": 0,
+  "schannel": "defaults",
+  "size": 30543,
+  "subdir": "win-64",
+  "url": "https://repo.continuum.io/pkgs/msys2/win-64/m2w64-libwinpthread-git-5.0.0.4634.697f757-2.tar.bz2",
+  "version": "5.0.0.4634.697f757",
+  "with_features_depends": {}
+}

@@ -1,0 +1,51 @@
+{
+  "arch": "x86_64",
+  "auth": null,
+  "build": "10",
+  "build_number": 10,
+  "channel": "https://repo.continuum.io/pkgs/msys2/win-64",
+  "depends": [
+    "m2w64-bzip2",
+    "msys2-conda-epoch >=20160418"
+  ],
+  "files": [
+    "Library/mingw-w64/bin/libminizip-1.dll",
+    "Library/mingw-w64/bin/miniunzip.exe",
+    "Library/mingw-w64/bin/minizip.exe",
+    "Library/mingw-w64/bin/zlib1.dll",
+    "Library/mingw-w64/include/minizip/crypt.h",
+    "Library/mingw-w64/include/minizip/ioapi.h",
+    "Library/mingw-w64/include/minizip/iowin32.h",
+    "Library/mingw-w64/include/minizip/unzip.h",
+    "Library/mingw-w64/include/minizip/zip.h",
+    "Library/mingw-w64/include/zconf.h",
+    "Library/mingw-w64/include/zlib.h",
+    "Library/mingw-w64/lib/libminizip.a",
+    "Library/mingw-w64/lib/libminizip.dll.a",
+    "Library/mingw-w64/lib/libz.a",
+    "Library/mingw-w64/lib/libz.dll.a",
+    "Library/mingw-w64/lib/pkgconfig/minizip.pc",
+    "Library/mingw-w64/lib/pkgconfig/zlib.pc",
+    "Library/mingw-w64/share/licenses/zlib/LICENSE",
+    "Library/mingw-w64/share/man/man3/zlib.3.gz"
+  ],
+  "fn": "m2w64-zlib-1.2.8-10.tar.bz2",
+  "has_prefix": false,
+  "license": "ZLIB",
+  "link": {
+    "source": "C:\\ProgramData\\Anaconda3\\pkgs\\m2w64-zlib-1.2.8-10",
+    "type": 1
+  },
+  "md5": "0485dc8f4d06b8f59d1a280059b11cb9",
+  "name": "m2w64-zlib",
+  "noarch": null,
+  "platform": "win32",
+  "preferred_env": null,
+  "priority": 0,
+  "schannel": "defaults",
+  "size": 201984,
+  "subdir": "win-64",
+  "url": "https://repo.continuum.io/pkgs/msys2/win-64/m2w64-zlib-1.2.8-10.tar.bz2",
+  "version": "1.2.8",
+  "with_features_depends": {}
+}

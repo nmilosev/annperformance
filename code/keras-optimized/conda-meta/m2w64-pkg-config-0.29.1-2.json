@@ -1,0 +1,37 @@
+{
+  "arch": "x86_64",
+  "auth": null,
+  "build": "2",
+  "build_number": 2,
+  "channel": "https://repo.continuum.io/pkgs/msys2/win-64",
+  "depends": [
+    "m2w64-libwinpthread-git",
+    "msys2-conda-epoch >=20160418"
+  ],
+  "files": [
+    "Library/mingw-w64/bin/pkg-config.exe",
+    "Library/mingw-w64/bin/x86_64-w64-mingw32-pkg-config.exe",
+    "Library/mingw-w64/share/aclocal/pkg.m4",
+    "Library/mingw-w64/share/doc/pkg-config/pkg-config-guide.html",
+    "Library/mingw-w64/share/man/man1/pkg-config.1.gz"
+  ],
+  "fn": "m2w64-pkg-config-0.29.1-2.tar.bz2",
+  "has_prefix": false,
+  "license": "GPL",
+  "link": {
+    "source": "C:\\ProgramData\\Anaconda3\\pkgs\\m2w64-pkg-config-0.29.1-2",
+    "type": 1
+  },
+  "md5": "061a4a651cec4ede75ab7c4b12f96c3c",
+  "name": "m2w64-pkg-config",
+  "noarch": null,
+  "platform": "win32",
+  "preferred_env": null,
+  "priority": 0,
+  "schannel": "defaults",
+  "size": 480519,
+  "subdir": "win-64",
+  "url": "https://repo.continuum.io/pkgs/msys2/win-64/m2w64-pkg-config-0.29.1-2.tar.bz2",
+  "version": "0.29.1",
+  "with_features_depends": {}
+}

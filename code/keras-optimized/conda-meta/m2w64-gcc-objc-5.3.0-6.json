@@ -1,0 +1,47 @@
+{
+  "arch": "x86_64",
+  "auth": null,
+  "build": "6",
+  "build_number": 6,
+  "channel": "https://repo.continuum.io/pkgs/msys2/win-64",
+  "depends": [
+    "m2w64-gcc",
+    "msys2-conda-epoch >=20160418"
+  ],
+  "files": [
+    "Library/mingw-w64/bin/libobjc-4.dll",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/cc1obj.exe",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/cc1objplus.exe",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/include/objc/NXConstStr.h",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/include/objc/Object.h",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/include/objc/Protocol.h",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/include/objc/message.h",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/include/objc/objc-decls.h",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/include/objc/objc-exception.h",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/include/objc/objc-sync.h",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/include/objc/objc.h",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/include/objc/runtime.h",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/include/objc/thr.h",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/libobjc.a",
+    "Library/mingw-w64/lib/gcc/x86_64-w64-mingw32/5.3.0/libobjc.dll.a"
+  ],
+  "fn": "m2w64-gcc-objc-5.3.0-6.tar.bz2",
+  "has_prefix": false,
+  "license": "GPL, LGPL, FDL, custom",
+  "link": {
+    "source": "C:\\ProgramData\\Anaconda3\\pkgs\\m2w64-gcc-objc-5.3.0-6",
+    "type": 1
+  },
+  "md5": "4fce67b667d7ec47c1e5ff5ee8126fd0",
+  "name": "m2w64-gcc-objc",
+  "noarch": null,
+  "platform": "win32",
+  "preferred_env": null,
+  "priority": 0,
+  "schannel": "defaults",
+  "size": 15879530,
+  "subdir": "win-64",
+  "url": "https://repo.continuum.io/pkgs/msys2/win-64/m2w64-gcc-objc-5.3.0-6.tar.bz2",
+  "version": "5.3.0",
+  "with_features_depends": {}
+}

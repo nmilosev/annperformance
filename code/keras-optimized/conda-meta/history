@@ -1,0 +1,51 @@
+==> 2017-06-26 03:19:59 <==
+# cmd: C:\ProgramData\Anaconda3\Scripts\conda-script.py create --prefix . python=3.6
++defaults::pip-9.0.1-py36_1
++defaults::python-3.6.1-2
++defaults::setuptools-27.2.0-py36_1
++defaults::vs2015_runtime-14.0.25420-0
++defaults::wheel-0.29.0-py36_0
+# create specs: python 3.6*
+==> 2017-06-26 03:27:40 <==
+# cmd: C:\ProgramData\Anaconda3\Scripts\conda-script.py install scipy
++defaults::mkl-2017.0.1-0
++defaults::numpy-1.13.0-py36_0
++defaults::scipy-0.19.0-np113py36_0
+# install specs: scipy
+==> 2017-06-26 03:28:22 <==
+# cmd: C:\ProgramData\Anaconda3\Scripts\conda-script.py install m2w64-toolchain
++defaults::m2w64-binutils-2.25.1-5
++defaults::m2w64-bzip2-1.0.6-6
++defaults::m2w64-crt-git-5.0.0.4636.2595836-2
++defaults::m2w64-gcc-5.3.0-6
++defaults::m2w64-gcc-ada-5.3.0-6
++defaults::m2w64-gcc-fortran-5.3.0-6
++defaults::m2w64-gcc-libgfortran-5.3.0-6
++defaults::m2w64-gcc-libs-5.3.0-7
++defaults::m2w64-gcc-libs-core-5.3.0-7
++defaults::m2w64-gcc-objc-5.3.0-6
++defaults::m2w64-gmp-6.1.0-2
++defaults::m2w64-headers-git-5.0.0.4636.c0ad18a-2
++defaults::m2w64-isl-0.16.1-2
++defaults::m2w64-libiconv-1.14-6
++defaults::m2w64-libmangle-git-5.0.0.4509.2e5a9a2-2
++defaults::m2w64-libwinpthread-git-5.0.0.4634.697f757-2
++defaults::m2w64-make-4.1.2351.a80a8b8-2
++defaults::m2w64-mpc-1.0.3-3
++defaults::m2w64-mpfr-3.1.4-4
++defaults::m2w64-pkg-config-0.29.1-2
++defaults::m2w64-toolchain-5.3.0-7
++defaults::m2w64-tools-git-5.0.0.4592.90b8472-2
++defaults::m2w64-windows-default-manifest-6.4-3
++defaults::m2w64-winpthreads-git-5.0.0.4634.697f757-2
++defaults::m2w64-zlib-1.2.8-10
++defaults::msys2-conda-epoch-20160418-1
+# install specs: m2w64-toolchain
+==> 2017-06-26 03:31:14 <==
+# cmd: C:\ProgramData\Anaconda3\Scripts\conda-script.py install libpython
++defaults::libpython-2.0-py36_0
+# install specs: libpython
+==> 2017-06-26 03:32:21 <==
+# cmd: C:\ProgramData\Anaconda3\Scripts\conda-script.py install mkl-service
++defaults::mkl-service-1.1.2-py36_3
+# install specs: mkl-service

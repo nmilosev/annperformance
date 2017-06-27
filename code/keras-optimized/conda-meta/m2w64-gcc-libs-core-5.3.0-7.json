@@ -1,0 +1,39 @@
+{
+  "arch": "x86_64",
+  "auth": null,
+  "build": "7",
+  "build_number": 7,
+  "channel": "https://repo.continuum.io/pkgs/msys2/win-64",
+  "depends": [
+    "m2w64-gmp",
+    "m2w64-libwinpthread-git",
+    "msys2-conda-epoch >=20160418"
+  ],
+  "files": [
+    "Library/mingw-w64/bin/libgcc_s_seh-1.dll",
+    "Library/mingw-w64/bin/libquadmath-0.dll",
+    "Library/mingw-w64/share/licenses/gcc-libs-core/COPYING.LIB",
+    "Library/mingw-w64/share/licenses/gcc-libs-core/COPYING.RUNTIME",
+    "Library/mingw-w64/share/licenses/gcc-libs-core/COPYING3",
+    "Library/mingw-w64/share/licenses/gcc-libs-core/README"
+  ],
+  "fn": "m2w64-gcc-libs-core-5.3.0-7.tar.bz2",
+  "has_prefix": false,
+  "license": "GPL3+, partial:GCCRLE, partial:LGPL2+",
+  "link": {
+    "source": "C:\\ProgramData\\Anaconda3\\pkgs\\m2w64-gcc-libs-core-5.3.0-7",
+    "type": 1
+  },
+  "md5": "276d396bfe8d958f71173b7134f739fa",
+  "name": "m2w64-gcc-libs-core",
+  "noarch": null,
+  "platform": "win32",
+  "preferred_env": null,
+  "priority": 0,
+  "schannel": "defaults",
+  "size": 217686,
+  "subdir": "win-64",
+  "url": "https://repo.continuum.io/pkgs/msys2/win-64/m2w64-gcc-libs-core-5.3.0-7.tar.bz2",
+  "version": "5.3.0",
+  "with_features_depends": {}
+}

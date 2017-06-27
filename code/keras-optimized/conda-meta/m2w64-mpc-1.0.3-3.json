@@ -1,0 +1,35 @@
+{
+  "arch": "x86_64",
+  "auth": null,
+  "build": "3",
+  "build_number": 3,
+  "channel": "https://repo.continuum.io/pkgs/msys2/win-64",
+  "depends": [
+    "m2w64-mpfr",
+    "msys2-conda-epoch >=20160418"
+  ],
+  "files": [
+    "Library/mingw-w64/include/mpc.h",
+    "Library/mingw-w64/lib/libmpc.a",
+    "Library/mingw-w64/share/info/mpc.info.gz"
+  ],
+  "fn": "m2w64-mpc-1.0.3-3.tar.bz2",
+  "has_prefix": false,
+  "license": "LGPL",
+  "link": {
+    "source": "C:\\ProgramData\\Anaconda3\\pkgs\\m2w64-mpc-1.0.3-3",
+    "type": 1
+  },
+  "md5": "1d11536216fcfca984c8b6ec5af78b95",
+  "name": "m2w64-mpc",
+  "noarch": null,
+  "platform": "win32",
+  "preferred_env": null,
+  "priority": 0,
+  "schannel": "defaults",
+  "size": 71711,
+  "subdir": "win-64",
+  "url": "https://repo.continuum.io/pkgs/msys2/win-64/m2w64-mpc-1.0.3-3.tar.bz2",
+  "version": "1.0.3",
+  "with_features_depends": {}
+}

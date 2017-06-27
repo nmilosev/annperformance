@@ -1,0 +1,32 @@
+{
+  "arch": "x86_64",
+  "auth": null,
+  "build": "3",
+  "build_number": 3,
+  "channel": "https://repo.continuum.io/pkgs/msys2/win-64",
+  "depends": [
+    "msys2-conda-epoch >=20160418"
+  ],
+  "files": [
+    "Library/mingw-w64/x86_64-w64-mingw32/lib/default-manifest.o"
+  ],
+  "fn": "m2w64-windows-default-manifest-6.4-3.tar.bz2",
+  "has_prefix": false,
+  "license": "BSD",
+  "link": {
+    "source": "C:\\ProgramData\\Anaconda3\\pkgs\\m2w64-windows-default-manifest-6.4-3",
+    "type": 1
+  },
+  "md5": "d11e6e16dc4ae0bce50499a1c174033d",
+  "name": "m2w64-windows-default-manifest",
+  "noarch": null,
+  "platform": "win32",
+  "preferred_env": null,
+  "priority": 0,
+  "schannel": "defaults",
+  "size": 3477,
+  "subdir": "win-64",
+  "url": "https://repo.continuum.io/pkgs/msys2/win-64/m2w64-windows-default-manifest-6.4-3.tar.bz2",
+  "version": "6.4",
+  "with_features_depends": {}
+}
